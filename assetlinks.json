@@ -1,0 +1,25 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.cbitts.attendence_record",
+    "sha256_cert_fingerprints":
+    ["D3:54:B5:31:E0:38:2D:F9:FC:1C:73:1F:90:9B:4B:D4:EA:00:5B:3B:AC:AF:F1:9A:0E:BB:6F:7B:88:B1:EB:FD"]
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "web",
+    "site": "https://www.Attendance-app.com"
+  }
+},
+{
+  "relation": ["delegate_permission/common.get_login_creds"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.cbitts.attendence_record",
+    "sha256_cert_fingerprints":
+    ["D3:54:B5:31:E0:38:2D:F9:FC:1C:73:1F:90:9B:4B:D4:EA:00:5B:3B:AC:AF:F1:9A:0E:BB:6F:7B:88:B1:EB:FD"]
+  }
+}]

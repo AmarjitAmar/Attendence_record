@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "168637717779",
+    "firebase_url": "https://attendencerecord-d9c23.firebaseio.com",
+    "project_id": "attendencerecord-d9c23",
+    "storage_bucket": "attendencerecord-d9c23.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:168637717779:android:8dc96448830dde07",
+        "android_client_info": {
+          "package_name": "com.cbitts.attendence_record"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "168637717779-5sm5b88ttlmhjpqhtduv407mm08uvdf5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cbitts.attendence_record",
+            "certificate_hash": "a1139e511341ae2811c56edc380aafedc0fc4fcc"
+          }
+        },
+        {
+          "client_id": "168637717779-tt34o075cc13584gipriqcsllvs4nu8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCb6V1o0X3OWOptHV4HecEldwL9oHERgKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "168637717779-tt34o075cc13584gipriqcsllvs4nu8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
