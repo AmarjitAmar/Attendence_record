@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-   android:orientation="vertical"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     tools:context=".MainActivity"
     tools:showIn="@layout/app_bar_main">
     <TextView
@@ -24,7 +25,6 @@
         android:layout_marginTop="50dp"
         android:src="@drawable/profile"
         app:civ_border_color="#EEEEEE"
-
         app:civ_border_width="4dp"
         app:civ_shadow="true"
         app:civ_shadow_color="#8BC34A"
@@ -63,8 +63,10 @@
         android:text="Log In" />
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="horizontal">
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -73,6 +75,8 @@
         android:textColor="#000"
         android:textSize="20dp"
         android:text="New User?" />
+
+
 
 
     <TextView
@@ -84,9 +88,26 @@
        android:layout_marginTop="40dp"
         android:textSize="20dp"
         android:layout_marginStart="5dp"
-        android:textColor="#4CAF50"
-       />
+        android:textColor="#4CAF50"/>
+
+
+
 </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-5031381957236843/4065673950" />
+
+    </LinearLayout>
+
 
 
 </LinearLayout>

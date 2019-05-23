@@ -4,32 +4,26 @@
     tools:showIn="navigation_view">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_Schedule"
+            android:id="@+id/nav_Attendance"
             android:icon="@drawable/ic_schedule_black_24dp"
-            android:title="Schedule" />
+            android:title="View Attendance" />
         <item
-            android:id="@+id/nav_Reports"
+            android:id="@+id/nav_Assignments"
             android:icon="@drawable/ic_done_all_black_24dp"
-            android:title="Reports" />
+            android:title="Assignments detail" />
         <item
-            android:id="@+id/nav_detail"
+            android:id="@+id/nav_Detail"
             android:icon="@drawable/ic_playlist_add_check_black_24dp"
             android:title="Student_Detail"/>
         <item
-            android:id="@+id/nav_setting"
+            android:id="@+id/nav_Marks"
             android:icon="@drawable/ic_menu_manage"
-            android:title="Setting" />
-        <item
-            android:id="@+id/nav_Rate"
-            android:icon="@drawable/ic_star_black_24dp"
-            android:title="Rate Us" />
+            android:title="Marks Detail" />
+
     </group>
     <item android:title="Communicate">
         <menu>
-            <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
+
             <item
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"

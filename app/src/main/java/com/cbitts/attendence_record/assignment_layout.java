@@ -47,6 +47,7 @@ public class assignment_layout extends ArrayAdapter<Student>
 
 
 
+
         Student student=assignment.get(position);
         T1.setText(student.getRollno());
         T2.setText(student.getName());

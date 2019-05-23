@@ -10,8 +10,9 @@ public class Student {
     private  String date;
     private String contact;
     private String mail;
+   
+   // boolean present= false;
    // private String address;
-
 
 
     public Student(String id,String semester,String dept,String name,String subject,String rollno,String date,String contact,String mail)
@@ -25,8 +26,15 @@ public class Student {
         this.date=date;
         this.contact=contact;
         this.mail=mail;
-       // this.address=address;
+     //   this.present=present;
+        
+
+
+        // this.address=address;
     }
+
+
+
     public  String getId()
     {return id;}
     public String getSemester()
@@ -45,6 +53,9 @@ public class Student {
     {return contact;}
     public String getMail()
     {return mail;}
+
+    
    // public String getAddress()
     //{return address;}
+
 }

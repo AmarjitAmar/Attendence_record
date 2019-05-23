@@ -2,12 +2,16 @@ package com.cbitts.attendence_record;
 
 import android.app.DatePickerDialog;
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -23,7 +27,8 @@ public class Assignment extends AppCompatActivity {
     ListView listView;
     EditText editText;
     DatePickerDialog datePickerDialog;
-    // Toolbar toolbar;
+    FloatingActionButton floatingActionButton;
+
     DatabaseReference databaseReference;
     List<Student> assignment;
 
@@ -33,6 +38,33 @@ public class Assignment extends AppCompatActivity {
         setContentView(R.layout.activity_assignment);
         databaseReference = FirebaseDatabase.getInstance().getReference("details");
         listView=(ListView)findViewById(R.id.listview);
+        floatingActionButton=(FloatingActionButton)findViewById(R.id.floatingActionButton);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(Assignment.this, "hello", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String date=editText.getText().toString().trim();
+
+                if(!TextUtils.isEmpty(date))
+                {
+
+                    Toast.makeText(Assignment.this, "Saved", Toast.LENGTH_SHORT).show();
+
+                }
+                else
+                {
+                    Toast.makeText(Assignment.this, "Required Field", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
         editText=(EditText)findViewById(R.id.date);
         editText.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,10 +82,7 @@ public class Assignment extends AppCompatActivity {
                 datePickerDialog.show();
             }
         });
-        //   toolbar=(Toolbar)findViewById(R.id.Toolbar);
-        // toolbar.setTitle("Take Attendance");
-        //toolbar.setTitleTextColor(Color.WHITE);
-        // toolbar.setBackgroundColor(Color.BLUE);
+
         assignment=new ArrayList<>();
     }
     @Override

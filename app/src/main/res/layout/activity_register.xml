@@ -8,14 +8,14 @@
     android:background="@drawable/varify"
     tools:context=".Register">
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Register Here"
         android:textStyle="italic"
         android:textSize="30dp"
         android:textColor="#000"
-        android:layout_marginTop="100dp"
-        android:layout_marginStart="100dp"/>
+        android:layout_marginTop="80dp"
+       android:layout_gravity="center"/>
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
