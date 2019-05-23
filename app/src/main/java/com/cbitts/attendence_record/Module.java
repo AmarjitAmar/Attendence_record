@@ -31,7 +31,7 @@ public class Module extends AppCompatActivity {
                     }
                     case 1:
                     {
-                        startActivity(new Intent(Module.this,Attendance.class));
+                        startActivity(new Intent(Module.this,Take_Attendance.class));
                         break;
                     }
                     case 2:
