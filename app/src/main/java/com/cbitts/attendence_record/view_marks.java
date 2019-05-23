@@ -29,7 +29,7 @@ public class view_marks extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student_detail);
+        setContentView(R.layout.activity_view_marks);
         databaseReference = FirebaseDatabase.getInstance().getReference("details");
         studentList = new ArrayList<>();
         tableLayout = (TableLayout) findViewById(R.id.tablelayout);

@@ -1,6 +1,7 @@
 package com.cbitts.attendence_record;
 
 import android.app.Activity;
+import android.support.design.widget.FloatingActionButton;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -36,16 +38,13 @@ public class assignment_layout extends ArrayAdapter<Student>
         TextView T2=(TextView)listViewItem.findViewById(R.id.textView2);
         checkBox=(CheckBox)listViewItem.findViewById(R.id.checkbox);
         editText=(EditText)listViewItem.findViewById(R.id.marks);
-        //FloatingActionButton floatingActionButton=(FloatingActionButton)listViewItem.findViewById(R.id.fab);
-
-        //floatingActionButton.setOnClickListener(new View.OnClickListener() {
-        //  @Override
-        //public void onClick(View v) {
-        //  Toast.makeText(context, "hello", Toast.LENGTH_SHORT).show();
-        //}
-        //});
-
-
+        FloatingActionButton floatingActionButton=(FloatingActionButton)listViewItem.findViewById(R.id.fab);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+          @Override
+        public void onClick(View v) {
+          Toast.makeText(context, " ", Toast.LENGTH_SHORT).show();
+        }
+        });
 
 
         Student student=assignment.get(position);

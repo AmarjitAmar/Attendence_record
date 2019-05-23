@@ -97,7 +97,7 @@ public class Take_Attendance extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Student dataModel = attendance.get(position);
-                dataModel.present = !dataModel.present;
+                //dataModel.present = !dataModel.present;
                 adapter.notifyDataSetChanged();
 
                 Toast.makeText(Take_Attendance.this, ""+position, Toast.LENGTH_SHORT).show();

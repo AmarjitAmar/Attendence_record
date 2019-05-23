@@ -30,7 +30,7 @@ public class Assignments_detail extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_student_detail);
+        setContentView(R.layout.activity_assignments_detail);
         databaseReference = FirebaseDatabase.getInstance().getReference("details");
         studentList = new ArrayList<>();
         tableLayout = (TableLayout) findViewById(R.id.tablelayout);

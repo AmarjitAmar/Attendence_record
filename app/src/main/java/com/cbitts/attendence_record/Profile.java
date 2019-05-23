@@ -21,10 +21,10 @@ public class Profile extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
         imageView = (ImageView) findViewById(R.id.imageView2);
         Animation animation1= AnimationUtils.loadAnimation(getApplicationContext(),R.anim.blink);
-        Animation animation2=AnimationUtils.loadAnimation(getApplicationContext(),R.anim.zoom);
+      //  Animation animation2=AnimationUtils.loadAnimation(getApplicationContext(),R.anim.zoom);
 
         imageView.startAnimation(animation1);
-        imageView.startAnimation(animation2);
+        //imageView.startAnimation(animation2);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
